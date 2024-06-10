@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
 
-data = pd.read_csv("D:\Zeyad\Downloads\sms_spam.csv")
+data = pd.read_csv("/workspaces/SpamDetection/sms_spam.csv")
 x = data['text']
 y = data['type']
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.25,random_state=0)
