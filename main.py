@@ -17,7 +17,7 @@ clfr.fit(sms_train_vectorized,y_train)
 predicted = clfr.predict(sms_test_vectorized)
 
 st.title("Spam Classification App")
-st.image("D:\Zeyad\Downloads\SpamIMG.png",use_column_width=True)
+st.image("/workspaces/SpamDetection/SpamIMG.png",use_column_width=True)
 st.text('Model Description: Naive Bayes Model, trained on sms data')
 text = st.text_input("Enter Text Here","Type Here...")
 predict = st.button('Predict')
